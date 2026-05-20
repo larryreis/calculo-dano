@@ -86,7 +86,7 @@
 
   /* TELA CADASTRO */
   #tela-cadastro{position:fixed;inset:0;background:#f0f2f5;z-index:9999;display:flex;align-items:center;justify-content:center;padding:1rem;}
-  #tela-calculadora{display:none;}
+  #tela-calculadora{display:block;}
   .cad-card{background:#fff;border-radius:16px;border:0.5px solid rgba(0,0,0,0.10);padding:2.5rem 2rem;max-width:460px;width:100%;box-shadow:0 4px 32px rgba(0,0,0,0.09);}
   .cad-logo{text-align:center;margin-bottom:1.5rem;}
   .cad-logo h1{font-size:20px;font-weight:700;color:#1a1a1a;letter-spacing:-0.3px;margin-bottom:4px;}
@@ -105,37 +105,6 @@
 </style>
 </head>
 <body>
-<!-- TELA DE CADASTRO -->
-<div id="tela-cadastro">
-  <div class="cad-card">
-    <div class="cad-logo">
-      <h1>Calculadora de Danos Morais</h1>
-      <p>Crédito Consignado &nbsp;·&nbsp; Fundamentação Jurídica</p>
-      <div class="linha"></div>
-    </div>
-    <p class="cad-desc">Para acessar a calculadora, informe seus dados abaixo. O acesso é <strong>gratuito e imediato</strong>.</p>
-
-    <label class="cad-label" for="cad-email">E-mail</label>
-    <input class="cad-input" type="email" id="cad-email" placeholder="seu@email.com.br" autocomplete="email">
-
-    <label class="cad-label" for="cad-profissao">Profissão</label>
-    <select class="cad-select" id="cad-profissao" onchange="toggleOutro()">
-      <option value="">Selecione sua profissão...</option>
-      <option value="Advogado(a)">Advogado(a)</option>
-      <option value="Estagiário(a) de Direito">Estagiário(a) de Direito</option>
-      <option value="Estudante de Direito">Estudante de Direito</option>
-      <option value="outro">Outra profissão...</option>
-    </select>
-    <div id="campo-outro">
-      <input class="cad-input" type="text" id="cad-outro" placeholder="Digite sua profissão...">
-    </div>
-
-    <div class="cad-erro" id="cad-erro"></div>
-    <button class="cad-btn" id="cad-btn" onclick="fazerCadastro()">Acessar a calculadora →</button>
-    <p class="cad-rodape">Seus dados são usados apenas para controle de acesso.<br>Não há cobrança nem envio de spam.</p>
-  </div>
-</div>
-
 <!-- CALCULADORA -->
 <div id="tela-calculadora">
 <div class="container">
